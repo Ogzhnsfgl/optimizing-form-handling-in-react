@@ -2,8 +2,6 @@
 
 import React, { useEffect } from "react";
 import { useForm, Controller } from "react-hook-form";
-import { Listbox, ListboxItem } from "@ciceksepeti/cui-listbox";
-import "@ciceksepeti/cui-listbox/styles.css";
 import RenderCounter from "../components/render-counter";
 
 let renderCount = 0;
@@ -90,11 +88,11 @@ const ReactHookFormAdvance = () => {
                     control={control}
                     defaultValue=""
                     render={({ field }) => (
-                        <Listbox {...field} className="listbox">
-                            <ListboxItem value="option1">Option 1</ListboxItem>
-                            <ListboxItem value="option2">Option 2</ListboxItem>
-                            <ListboxItem value="option3">Option 3</ListboxItem>
-                        </Listbox>
+                        <select {...field} className="listbox">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </select>
                     )}
                 />
                 {errors.defaultListbox && (
@@ -117,11 +115,11 @@ const ReactHookFormAdvance = () => {
                             defaultValue=""
                             rules={{ required: true }}
                             render={({ field }) => (
-                                <Listbox {...field} className="listbox">
-                                    <ListboxItem value="option1">Option 1</ListboxItem>
-                                    <ListboxItem value="option2">Option 2</ListboxItem>
-                                    <ListboxItem value="option3">Option 3</ListboxItem>
-                                </Listbox>
+                                <select {...field} className="listbox">
+                                    <option value="option1">Option 1</option>
+                                    <option value="option2">Option 2</option>
+                                    <option value="option3">Option 3</option>
+                                </select>
                             )}
                         />
                         {errors.additionalListbox && (

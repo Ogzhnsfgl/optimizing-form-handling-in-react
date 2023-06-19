@@ -1,13 +1,13 @@
 import Link from "next/link";
 
-export default function ServerActionBasicError() {
+const ServerActionBasicError = () => {
     return (
         <div className="formWrapper">
             <p>
                 Your form submission is failed.
                 Please try again.
             </p>
-            <Link href={'/server-action-basic'} >
+            <Link href={'/sc-sa-basic'} >
                 <button>
                     Go back to the form
                 </button>
@@ -15,3 +15,5 @@ export default function ServerActionBasicError() {
         </div>
     )
 }
+
+export default ServerActionBasicError;

@@ -19,12 +19,10 @@ export const handleBasicFormSubmit = async (form: FormData) => {
   const errors = validateForm(form);
 
   if (Object.keys(errors).length > 0) {
-    redirect('/server-action-basic-error');
+    redirect('/submit-error');
   }
 
-  return {
-    success: `Form submitted successfully`,
-  };
+  redirect('/submit-success');
 };
 
 export const handleBasicFormValidationSubmit = async (form: FormData) => {

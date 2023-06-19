@@ -131,7 +131,7 @@ label {
 
 
 
-button:not([data-cui-listbox-button]) {
+button {
   width: 100%;
   background: #4285f4;
   color: #ffffff;
@@ -148,11 +148,11 @@ button:not([data-cui-listbox-button]) {
   transition: background-color 0.3s ease;
 }
 
-button:not([data-cui-listbox-button]):hover {
+button:hover {
   background: #3367d6;
 }
 
-button:not([data-cui-listbox-button]):active,
+button:active,
 input:active,
 input:active {
   transition: 0.3s all;
@@ -332,7 +332,7 @@ input[type='checkbox'] {
   height: 28px;
 }
 
-[data-cui-listbox-button] {
+select {
   width: 100%;
 }
 

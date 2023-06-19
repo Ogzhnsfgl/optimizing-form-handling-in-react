@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 let renderCount = 0;
 
-export const ReactHookFormBasic = () => {
+const ReactHookFormBasic = () => {
     const {
         register,
         handleSubmit,

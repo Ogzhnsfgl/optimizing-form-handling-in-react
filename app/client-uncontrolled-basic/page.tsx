@@ -5,7 +5,7 @@ import RenderCounter from "../components/render-counter";
 
 let renderCount = 0;
 
-export const UncontrolledLoginForm = () => {
+const UncontrolledLoginForm = () => {
     const emailInputRef = useRef<HTMLInputElement>(null);
     const passwordInputRef = useRef<HTMLInputElement>(null);
     const rememberMeCheckboxRef = useRef<HTMLInputElement>(null);

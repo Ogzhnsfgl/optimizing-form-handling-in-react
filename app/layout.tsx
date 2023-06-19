@@ -1,3 +1,5 @@
+import Link from 'next/link'
+import { Navbar } from './components/navbar'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -15,7 +17,48 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className='app-container'>
+          <Link href="/">
+            <h1 className="title">Optimizing Form Handling in React: Leveraging the Power of React Hook Form: Essential Features and Best Practices</h1>
+          </Link>
+          <Navbar />
+          <div className="container">
+            {children}
+          </div>
+          <footer>
+            <div className="footerWrapper">
+              <div className="footerLinks">
+                <a
+                  href='https://medium.com/p/19fea432c527/'
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Medium Article
+                </a>
+                <a
+                  href="https://github.com/ogzhnsfgl/react-form-handling"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub Repo
+                </a>
+              </div>
+              <p>
+                &copy; 2023 Created by{" "}
+                <a
+                  href="https://osofuoglu.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  @ogzhnsfgl
+                </a>{" "}
+                with ❤️. All rights reserved.
+              </p>
+            </div>
+          </footer>
+        </div>
+      </body>
     </html>
   )
 }

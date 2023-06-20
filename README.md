@@ -1,6 +1,6 @@
 ## Optimizing Form Handling in React Demo
 
-This is a demo website showcasing sample code discussed in the article ["Optimizing Form Handling in React: Maximize Performance"](https://medium.com/p/19fea432c527/). It provides practical examples and insights on effectively managing forms in React applications.
+This is a demo website showcasing sample code discussed in the article ["Optimizing Form Handling in React: Maximize Performance"](https://medium.com/p/ee8904f33a99/). It provides practical examples and insights on effectively managing forms in React applications.
 
 You can explore the live demo and experiment with the code in the CodeSandbox playground.
 

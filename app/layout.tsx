@@ -30,7 +30,7 @@ export default function RootLayout({
             <div className='footerWrapper'>
               <div className='footerLinks'>
                 <a
-                  href='https://medium.com/p/19fea432c527/'
+                  href='https://medium.com/p/ee8904f33a99/'
                   target='_blank'
                   rel='noopener noreferrer'
                 >

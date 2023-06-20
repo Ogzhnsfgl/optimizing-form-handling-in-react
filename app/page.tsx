@@ -16,7 +16,7 @@ export default function Home() {
       </p>
       <p className='article-link'>
         Read the full article on Medium:{' '}
-        <a href='https://medium.com/p/19fea432c527/'>Link to the article</a>
+        <a href='https://medium.com/p/ee8904f33a99/'>Link to the article</a>
       </p>
     </div>
   );

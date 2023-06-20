@@ -1,48 +1,33 @@
-import { handleBasicFormSubmit } from "@/app/actions/form";
+import { handleBasicFormSubmit } from '@/app/actions/form';
 
+export default function ScSaBasic() {
+  return (
+    <div className='formWrapper'>
+      <h2>Server Component - Server Action</h2>
 
-export default function SABasic() {
-    return (
-        <div className="formWrapper">
-            <h2>Server Action Basic</h2>
+      <p className='form-description'>
+        This is a <strong>Server Component.</strong>
+        There is no client JS code to handle form. (You can block JS in your
+        browser and see that form still works.) It uses{' '}
+        <strong>Server Actions</strong> to handle the form submission. If there
+        is an invalid input, server will redirect to the another page with error
+        message.
+      </p>
 
-            <p className='form-description'>
-                This is a Server Component.
-                There is no client JS code to handle form.
-                It uses Server Actions to handle the form submission.
-                If there is an invalid input, server will redirect to the another page with error message.
-            </p>
+      <form action={handleBasicFormSubmit} autoComplete='off'>
+        <label htmlFor='email'>Email</label>
+        <input type='email' name='email' id='email' />
 
-            <form action={handleBasicFormSubmit} autoComplete="off">
-                <label htmlFor="email">Email</label>
-                <input
-                    type="text"
-                    name="email"
-                    id="email"
-                />
+        <label htmlFor='password'>Password</label>
+        <input type='password' name='password' id='password' />
 
-                <label htmlFor="password">Password</label>
-                <input
-                    type="password"
-                    name="password"
-                    id="password"
-                />
-                {/* {errors.password && <p className="error">{errors.password}</p>} */}
-
-                <div className="flex">
-                    <input
-                        type="checkbox"
-                        name="rememberMe"
-                        id="rememberMe"
-                    // checked={rememberMe}
-                    // onChange={(e) => setRememberMe(e.target.checked)}
-                    />
-                    <label htmlFor="rememberMe" >Remember me!</label>
-                </div>
-
-                <button type="submit">Login</button>
-            </form>
-            {/* <RenderCounter count={renderCount}  /> */}
+        <div className='flex'>
+          <input type='checkbox' name='rememberMe' id='rememberMe' />
+          <label htmlFor='rememberMe'>Remember me!</label>
         </div>
-    )
+
+        <button type='submit'>Login</button>
+      </form>
+    </div>
+  );
 }

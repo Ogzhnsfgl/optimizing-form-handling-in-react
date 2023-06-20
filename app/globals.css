@@ -23,20 +23,18 @@ body {
   padding: 20px;
 }
 
-.article-container {
-  text-align: center;
-  flex: 1;
-}
-
 .article {
-  text-align: center;
+  text-align: justify;
+}
+
+.article p {
+  margin: 0;
+  color: #414141;
+  margin-bottom: 16px;
 }
 
 
 
-.article-description {
-  color: #777777;
-}
 
 .article-link {
   margin-top: 16px;
@@ -49,6 +47,8 @@ body {
 
 * {
   box-sizing: border-box;
+  line-height: 1.5;
+  ;
 }
 
 form {
@@ -70,7 +70,7 @@ h2 {
   margin: 0;
   margin-top: 8px;
   margin-bottom: 16px;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -177,13 +177,14 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 0;
 }
 
 .navbarList li {
   margin-right: 10px;
+  flex-basis: 45%;
 }
 
 .navbarList li:last-child {
@@ -363,6 +364,25 @@ select {
   font-size: 20px;
   display: inline-block;
   color: #279e17;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+
+.error-icon {
+  font-size: 48px;
+  width: 100%;
+  line-height: 1;
+  vertical-align: middle;
+  color: #e53935;
+  display: flex;
+  justify-content: center;
+}
+
+.error-text {
+  font-size: 20px;
+  display: inline-block;
+  color: #e53935;
   font-weight: 600;
   width: 100%;
   text-align: center;

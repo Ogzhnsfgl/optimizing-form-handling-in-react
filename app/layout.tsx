@@ -34,7 +34,7 @@ export default function RootLayout({
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  Medium Article
+                  Full Article on Medium
                 </a>
                 <a
                   href='https://github.com/Ogzhnsfgl/optimizing-form-handling-in-react'

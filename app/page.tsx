@@ -11,13 +11,17 @@ export default function Home() {
       </p>
       <p>
         This is a demo website showcasing sample code discussed in the article.
-        It provides practical examples and insights on Optimizing Form Handling
-        in React: Leveraging the Power of React Hook Form.
+        It provides practical examples and insights on{' '}
+        <strong>
+          Optimizing Form Handling in React: Maximizing Performance.
+        </strong>
       </p>
-      <p className='article-link'>
-        Read the full article on Medium:{' '}
-        <a href='https://medium.com/p/ee8904f33a99/'>Link to the article</a>
-      </p>
+      <strong>
+        <p>
+          Read the full article on Medium:{' '}
+          <a href='https://medium.com/p/ee8904f33a99/'>Link to the article</a>
+        </p>
+      </strong>
     </div>
   );
 }

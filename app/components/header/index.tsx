@@ -1,7 +1,12 @@
 import Link from 'next/link';
 
-export const Navbar = () => {
-  return (
+export const Header = () => (
+  <header>
+    <Link href='/'>
+      <h1 className='title'>
+        Optimizing Form Handling in React: Maximizing Performance
+      </h1>
+    </Link>
     <nav className='navbar'>
       <ul className='navbarList'>
         <li>
@@ -28,5 +33,5 @@ export const Navbar = () => {
         </li>
       </ul>
     </nav>
-  );
-};
+  </header>
+);

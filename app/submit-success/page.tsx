@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 const SubmitSuccessPage = () => {
   return (
     <div className='formWrapper'>

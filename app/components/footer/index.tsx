@@ -25,7 +25,7 @@ export const Footer = () => (
         </a>
       </div>
       <p>
-        &copy; 2023 Created by{' '}
+        &copy; 2023 ~ Created with ❤️ by{' '}
         <a
           href='https://osofuoglu.vercel.app'
           target='_blank'
@@ -33,7 +33,6 @@ export const Footer = () => (
         >
           @ogzhnsfgl
         </a>{' '}
-        with ❤️. All rights reserved.
       </p>
     </div>
   </footer>

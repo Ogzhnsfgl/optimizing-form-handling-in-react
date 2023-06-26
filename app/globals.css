@@ -168,7 +168,6 @@ nav {
 }
 
 .navbarList {
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -178,21 +177,32 @@ nav {
 }
 
 .navbarList li {
-  margin-right: 10px;
-  flex-basis: 45%;
-}
+  list-style: none;
+  flex: 1 1 100%;
 
-.navbarList li:last-child {
-  margin-right: 0;
+  @media (min-width: 768px) {
+    flex: 1 1 350px;
+  }
 }
 
 .navbarList li a {
   text-decoration: none;
+  position: relative;
   color: #333333;
   font-weight: 500;
-  padding: 5px 10px;
+  padding: 5px 10px 5px 15px;
   transition: background-color 0.3s ease;
   border-radius: 8px;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    content: '●'; /* Updated sign */
+    margin-right: 6px;
+    font-size: 12px; /* Added font size */
+  }
 }
 
 .navbarList li a:hover {
